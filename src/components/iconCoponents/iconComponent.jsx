@@ -1,28 +1,21 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
 import './iconComponent.css';
 
-function IconComponent({ children, href, target, download = false, spanText }) {
-    const [isHovered, setIsHovered] = useState(false)
+function IconComponent({ children, href, target, download = false, setIconHovered}) {
 
     return (
-        <div className='divContainerAll'>
+        <li className='liIcons'>
             <a
                 href={href}
                 className='aIcons'
                 target={target}
                 download={download}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                onMouseEnter={() => setIconHovered(href)}
+                onMouseLeave={() => setIconHovered(null)}
             >
                 {children}
             </a>
-            {
-                <div className='spanTextContainer'>
-                    <span className='spanText'>{spanText}</span>
-                </div>
-            }
-        </div>
+        </li>
     )
 }
 
