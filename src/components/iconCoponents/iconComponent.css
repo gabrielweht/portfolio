@@ -1,0 +1,55 @@
+.divContainerAll {
+    display: flex;
+}
+
+.aIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.spanTextContainer {
+    display: flex;
+    justify-content: center;
+    transform: translate(60%);
+}
+
+.spanText {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: auto;
+    position: relative;
+}
+
+.spanText:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    /* Ajusta esta propiedad para cambiar la distancia entre la flecha y el cuadro */
+    transform: translateY(-50%) rotate(180deg);
+    /* Rotar la flecha */
+    border-style: solid;
+    border-width: 10px 2px 10px 10px;
+    /* Cambiar el ancho de la flecha */
+    border-color: transparent transparent transparent #ffffff;
+    /* Cambiar el color de la flecha */
+}
+
+.spanText:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    /* Ajusta esta propiedad para cambiar la distancia entre la flecha transparente y el cuadro */
+    transform: translateY(-50%) rotate(180deg);
+    /* Rotar la flecha transparente */
+    border-style: solid;
+    border-width: 10px 2px 10px 10px;
+    /* Cambiar el ancho de la flecha transparente */
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0);
+    /* Cambiar el color de la flecha transparente */
+}

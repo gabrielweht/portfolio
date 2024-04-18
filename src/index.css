@@ -1,0 +1,26 @@
+:root {
+  font-family: Segoe WPC, Segoe UI, sans-serif;
+  line-height: 1.4em;
+  font-weight: 400;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --darkBluishGray: #1F2428;
+  --darkSlateGray: #24292E;
+  --charcoalGray: #1B1F23;
+  --slateGray: #69727B;
+  --lightGrayishBlue: #E1E4E8;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--darkSlateGray);
+}
+
+
