@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import './iconComponent.css';
 
-function IconComponent({ children, href, target, download = false, setIconHovered}) {
+function IconComponent({ children, href, target, download = false, setIconHovered, isActive}) {
 
     return (
         <li className='liIcons'>
             <a
                 href={href}
-                className='aIcons'
+                className={`aIcons ${isActive}`}
                 target={target}
                 download={download}
                 onMouseEnter={() => setIconHovered(href)}
