@@ -1,13 +1,34 @@
 import './navbar.css'
 import IconComponent from '../iconCoponents/iconComponent';
 import { navbarLinksLower, navbarLinksUpper } from '../../utils/navbarLinks';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Navbar() {
     const [iconHovered, setIconHovered] = useState(null)
+    const [hash, setHash] = useState('');
+
+    useEffect(() => {
+        setHash(window.location.hash);
+
+        const handleHashChange = () => {
+            setHash(window.location.hash);
+        };
+        window.addEventListener('hashchange', handleHashChange);
+
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, [hash]);
+
+    function isActive(hrefValue, component) {
+        if (hrefValue === hash && component !== 'icon') {
+            return 'liActive'
+        } else if (hrefValue === hash && component === 'icon') {
+            return 'iconActive'
+        }
+    }
 
     function iconDisplay(hrefValue, keyValue) {
-
 
         if (iconHovered !== hrefValue) {
             return {
@@ -26,7 +47,7 @@ function Navbar() {
                 <ul className='ulIcons ulIconsUpper'>
                     {navbarLinksUpper.map((link, key) => {
                         const Icon = link.icon
-                        
+
                         return (
                             <>
                                 <IconComponent
@@ -34,8 +55,9 @@ function Navbar() {
                                     href={link.href}
                                     download={link.download}
                                     setIconHovered={setIconHovered}
+                                    isActive={isActive(link.href)}
                                 >
-                                    <Icon className='icon' />
+                                    <Icon className={`icon ${isActive(link.href, 'icon')}`} />
                                 </IconComponent>
                             </>
                         )
@@ -59,7 +81,6 @@ function Navbar() {
                         )
                     })}
                 </ul>
-
             </div>
             <div className='labels'>
                 <ul className='ulIcons ulIconsUpper'>
@@ -75,9 +96,7 @@ function Navbar() {
                                 }
                             </>
                         )
-
                     })}
-
                 </ul>
                 <ul className='ulIcons ulIconsLower'>
                     {navbarLinksLower.map((link, key) => {
@@ -90,9 +109,7 @@ function Navbar() {
                             </li>
                         )
                     })}
-
                 </ul>
-
             </div>
         </section>
     )

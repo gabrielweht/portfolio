@@ -35,14 +35,15 @@
     width: 2rem;
     height: auto;
     padding: 1rem 0 1rem 0;
-    color: var(--slateGray)
+    color: var(--slateGray);
+    line-height: 3px;
 }
 
 .icon:hover {
     color: var(--lightGrayishBlue)
 }
 
-.icon:active {
+.iconActive {
     color: var(--lightGrayishBlue)
 }
 
