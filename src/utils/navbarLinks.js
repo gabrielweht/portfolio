@@ -9,7 +9,7 @@ import curriculum from '../assets/Gabriel Weht - CV - Software Developer.pdf'
 
 export const navbarLinksUpper = [
     {
-        href: '#',
+        href: '#profile',
         spanText: 'Profile',
         download: false,
         icon: FaRegUserCircle
