@@ -1,7 +1,9 @@
 import './navbar.css'
-import IconComponent from '../iconCoponents/iconComponent';
-import { navbarLinksLower, navbarLinksUpper } from '../../utils/navbarLinks';
+// import IconComponent from '../iconCoponents/iconComponent';
+import { navbarLinks } from '../../utils/navbarLinks';
 import { useEffect, useState } from 'react';
+import Labels from './labels/labels';
+import IconsDiv from './iconsDiv/iconsDiv';
 
 function Navbar() {
     const [iconHovered, setIconHovered] = useState(null)
@@ -43,74 +45,15 @@ function Navbar() {
 
     return (
         <section className='sectionNavbar'>
-            <div className='navbarDiv'>
-                <ul className='ulIcons ulIconsUpper'>
-                    {navbarLinksUpper.map((link, key) => {
-                        const Icon = link.icon
-
-                        return (
-                            <>
-                                <IconComponent
-                                    key={key}
-                                    href={link.href}
-                                    download={link.download}
-                                    setIconHovered={setIconHovered}
-                                    isActive={isActive(link.href)}
-                                >
-                                    <Icon className={`icon ${isActive(link.href, 'icon')}`} />
-                                </IconComponent>
-                            </>
-                        )
-                    })}
-                </ul>
-                <ul className='ulIcons ulIconsLower'>
-                    {navbarLinksLower.map((link, key) => {
-                        const Icon = link.icon
-
-                        return (
-                            <>
-                                <IconComponent
-                                    key={key}
-                                    href={link.href}
-                                    target={link.target}
-                                    setIconHovered={setIconHovered}
-                                >
-                                    <Icon className='icon' />
-                                </IconComponent>
-                            </>
-                        )
-                    })}
-                </ul>
-            </div>
-            <div className='labels'>
-                <ul className='ulIcons ulIconsUpper'>
-                    {navbarLinksUpper.map((link, key) => {
-                        return (
-                            <>
-                                {
-                                    <li key={key} className='liSpanText' style={iconDisplay(link.href, key)}>
-                                        <div className='spanTextContainer'>
-                                            <span className='spanText'>{link.spanText}</span>
-                                        </div>
-                                    </li>
-                                }
-                            </>
-                        )
-                    })}
-                </ul>
-                <ul className='ulIcons ulIconsLower'>
-                    {navbarLinksLower.map((link, key) => {
-                        return (
-
-                            <li key={key} className='liSpanText' style={iconDisplay(link.href, key)}>
-                                <div className='spanTextContainer'>
-                                    <span className='spanText'>{link.spanText}</span>
-                                </div>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
+            <IconsDiv
+                navbarLinks={navbarLinks}
+                setIconHovered={setIconHovered}
+                isActive={isActive}
+            />
+            <Labels
+                navbarLinks={navbarLinks}
+                iconDisplay={iconDisplay}
+            />
         </section>
     )
 }

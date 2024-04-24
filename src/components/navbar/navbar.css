@@ -48,7 +48,7 @@
 }
 
 .labels {
-    position: relative;
+    position: fixed;
     top: 0;
     width: fit-content;
     height: 100vh;
@@ -59,6 +59,7 @@
 }
 
 .spanTextContainer {
+    background-color: var(--darkSlateGray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,4 +107,13 @@
     align-items: center;
     justify-content: start;
     justify-self: start;
+    animation: spans .2s;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 1rem;
+}
+
+@keyframes spans {
+    0% { width: 0; }
+    100% {width: 100%;}
 }
