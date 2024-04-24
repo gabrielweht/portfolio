@@ -1,0 +1,84 @@
+.sectionProfile {
+    padding: 5rem 4rem 2.5rem 8rem;
+    height: fit-content;
+}
+
+.divProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divPresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+} 
+
+.divPresentation > img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 2px solid var(--coralPink);
+    margin-bottom: 2rem;
+}
+
+.typingAnimation {
+    width: 100%;
+    height: 4rem;
+}
+
+.typingAnimation > h1{
+    align-content: center;
+    padding-right: .5rem;
+    margin: 0;
+    font-size: 2rem;
+    height: 100%;
+    display: inline-block;
+    animation: typing 3s steps(40), cursor .5s step-start infinite alternate;
+    overflow: hidden;
+    border-right: .2rem solid var(--lightGrayishBlue);
+    white-space: nowrap;
+}
+
+.typingAnimation > h2 {
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.divAboutMe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+}
+
+.divAboutMe > h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.divAboutMe > p {
+    color: var(--lightSilverGray);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to {width: 100%;}
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
