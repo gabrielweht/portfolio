@@ -12,16 +12,21 @@
   --charcoalGray: #1B1F23;
   --slateGray: #69727B;
   --lightGrayishBlue: #E1E4E8;
+  --lightSilverGray: #E0E3E7;
   --coralPink: #F9826C;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--darkSlateGray);
+  overflow-x: hidden;
+  color: var(--lightGrayishBlue);
 }
 
 
+* {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
