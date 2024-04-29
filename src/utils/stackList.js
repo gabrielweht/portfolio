@@ -1,24 +1,25 @@
-import { SiReact } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { SiCsharp } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
-import { SiDotnet } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiNodedotjs } from "react-icons/si";
-import { SiMicrosoftsqlserver } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
-import { SiSequelize } from "react-icons/si";
+import iconReact from "../assets/react.webp";
+import Javascript from "../assets/js.webp";
+import SiTypescript from "../assets/ts.webp";
+import SiCsharp from "../assets/csharp.webp";
+import SiRedux from "../assets/redux.webp";
+import SiDotnet from "../assets/dotnet.webp";
+import SiHtml5 from "../assets/html.webp";
+import SiCss3 from "../assets/css.webp";
+import SiNodedotjs from "../assets/node.webp";
+import SiMicrosoftsqlserver from "../assets/sqlserver.webp";
+import SiPostgresql from "../assets/postgre.webp";
+import SiSequelize from "../assets/sequelize.webp";
 
 export const stacksList = [
     {
-        title: 'Frontend Development',
-        list: [
+        id: 1,
+        title: "Frontend Skills",
+        stacks: [
             {
                 stack: 'ReactJS',
                 level: 'Intermidiate',
-                logo: SiReact
+                logo: iconReact
             },
             {
                 stack: 'Redux',
@@ -28,7 +29,7 @@ export const stacksList = [
             {
                 stack: 'JavaScript',
                 level: 'Intermediate',
-                logo: SiJavascript
+                logo: Javascript
             },
             {
                 stack: 'TypeScript',
@@ -47,9 +48,10 @@ export const stacksList = [
             }
         ]
     },
-    {
-        title: 'Backend Development',
-        list: [
+    {   
+        id: 2,
+        title: "Backend Skills",
+        stacks: [
             {
                 stack: 'C#',
                 level: 'Initial',
@@ -59,16 +61,6 @@ export const stacksList = [
                 stack: '.Net',
                 level: 'Intermidiate',
                 logo: SiDotnet
-            },
-            {
-                stack: 'JavaScript',
-                level: 'Intermediate',
-                logo: SiJavascript
-            },
-            {
-                stack: 'TypeScript',
-                level: 'Intermidiate',
-                logo: SiTypescript
             },
             {
                 stack: 'NodeJS',

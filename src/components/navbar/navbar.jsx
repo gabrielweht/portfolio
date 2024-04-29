@@ -8,6 +8,8 @@ import IconsDiv from './iconsDiv/iconsDiv';
 function Navbar() {
     const [iconHovered, setIconHovered] = useState(null)
     const [hash, setHash] = useState('');
+    
+    const firstHash = window.location.hash
 
     useEffect(() => {
         setHash(window.location.hash);
@@ -20,7 +22,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('hashchange', handleHashChange);
         };
-    }, [hash]);
+    }, [hash, firstHash]);
 
     function isActive(hrefValue, component) {
         if (hrefValue === hash && component !== 'icon') {
@@ -44,7 +46,7 @@ function Navbar() {
     }
 
     return (
-        <section className='sectionNavbar'>
+        <nav className='sectionNavbar'>
             <IconsDiv
                 navbarLinks={navbarLinks}
                 setIconHovered={setIconHovered}
@@ -54,7 +56,7 @@ function Navbar() {
                 navbarLinks={navbarLinks}
                 iconDisplay={iconDisplay}
             />
-        </section>
+        </nav>
     )
 }
 

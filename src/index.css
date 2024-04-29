@@ -7,20 +7,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --darkBluishGray: #1F2428;
-  --darkSlateGray: #24292E;
-  --charcoalGray: #1B1F23;
-  --slateGray: #69727B;
+  --paleLime: #E7EED0;
   --lightGrayishBlue: #E1E4E8;
-  --lightSilverGray: #E0E3E7;
-  --coralPink: #F9826C;
+  --mistyGreen: #CAD1C3;
+  --slateGray: #948e99;
+  --darkPlum: #51425f;
+  --midnightPurple: #2e1437;
+  --nightPurple: #170a1c;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--darkSlateGray);
+  background: linear-gradient(135deg, var(--midnightPurple), var(--nightPurple));
   overflow-x: hidden;
   color: var(--lightGrayishBlue);
 }
@@ -29,4 +29,8 @@ body {
 * {
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+section {
+  padding: 2.5rem 4rem 2.5rem 8rem;
 }

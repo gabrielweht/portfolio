@@ -1,16 +1,13 @@
 .sectionProfile {
     padding: 5rem 4rem 2.5rem 8rem;
     height: fit-content;
-}
-
-.divProfile {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.divPresentation {
+.headerPresentation {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,10 +15,10 @@
     margin-right: 2rem;
 } 
 
-.divPresentation > img {
+.headerPresentation > img {
     width: 15rem;
     border-radius: 50%;
-    border: 2px solid var(--coralPink);
+    border: 2px solid var(--paleLime);
     margin-bottom: 2rem;
 }
 
@@ -37,7 +34,7 @@
     font-size: 2rem;
     height: 100%;
     display: inline-block;
-    animation: typing 3s steps(40), cursor .5s step-start infinite alternate;
+    animation: typing 5s steps(40) infinite, cursor .5s step-start infinite alternate;
     overflow: hidden;
     border-right: .2rem solid var(--lightGrayishBlue);
     white-space: nowrap;
@@ -48,6 +45,7 @@
     margin: 2rem;
     padding-right: .5rem;
     text-align: center;
+    color: var(--paleLime);
 }
 
 .divAboutMe {
@@ -59,22 +57,17 @@
     width: 60%;
 }
 
-.divAboutMe > h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
 .divAboutMe > p {
     color: var(--lightSilverGray);
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.5;
-    text-align: justify;
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to {width: 100%;}
+    0% { width: 0; }
+    40% {width: 100%; }
+    100% {width: 100%;}
 }
 
 @keyframes cursor {

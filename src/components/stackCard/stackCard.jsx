@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './stackCard.css'
 
-function StackCard({ children, stack, level }) {
+function StackCard({ children, stack}) {
 
     return (
         <article className='StackCard'>
@@ -10,9 +10,6 @@ function StackCard({ children, stack, level }) {
                 <h3>
                     {stack}
                 </h3>
-                <small>
-                    {level}
-                </small>
             </div>
         </article>
 

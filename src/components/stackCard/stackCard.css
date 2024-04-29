@@ -1,9 +1,9 @@
 .StackCard {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: fit-content;
-    height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
 }
 
 .divInfo {
@@ -11,5 +11,5 @@
 }
 
 .divInfo > h3 {
-    margin: 0;
+    margin: 2rem 0 0 0;
 }

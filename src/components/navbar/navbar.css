@@ -1,4 +1,5 @@
 .sectionNavbar {
+    padding: 0;
     width: fit-content;
 }
 
@@ -7,8 +8,7 @@
     top: 0;
     width: 4rem;
     height: 100vh;
-    background-color: var(--darkBluishGray);
-    border: 1px solid var(--charcoalGray);
+    background-color: var(--nightPurple);
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
@@ -59,7 +59,7 @@
 }
 
 .spanTextContainer {
-    background-color: var(--darkSlateGray);
+    background-color: var(--midnightPurple);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,8 +90,10 @@
     transform: translateY(-50%) rotate(180deg);
     border-style: solid;
     border-width: 6px 8px 6px 8px;
-    border-color: transparent transparent transparent var(--darkSlateGray);
+    border-color: transparent transparent transparent var(--midnightPurple);
 }
+
+
 
 .spanText {
     color: var(--lightGrayishBlue);

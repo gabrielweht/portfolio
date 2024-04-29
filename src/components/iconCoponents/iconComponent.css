@@ -6,7 +6,7 @@
 }
 
 .liActive {
-    border-left:2px solid var(--coralPink);
+    border-left:2px solid var(--paleLime);
     border-right: 2px solid transparent;
 }
 
