@@ -1,5 +1,4 @@
 import './navbar.css'
-// import IconComponent from '../iconCoponents/iconComponent';
 import { navbarLinks } from '../../utils/navbarLinks';
 import { useEffect, useState } from 'react';
 import Labels from './labels/labels';

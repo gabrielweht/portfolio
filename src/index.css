@@ -7,20 +7,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --paleLime: #E7EED0;
+  --sunriseOrange: #ECB365;
   --lightGrayishBlue: #E1E4E8;
   --mistyGreen: #CAD1C3;
   --slateGray: #948e99;
-  --darkPlum: #51425f;
-  --midnightPurple: #2e1437;
-  --nightPurple: #170a1c;
+  --deepSeaBlue: #064663;
+  --deepIndigo: #041C32;
+  --deepGreen: #041320;
+
+
+  --slideTransformRight: 0;
+  --slideTransformLeft: 0;
+  --transition: all 2s linear;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--midnightPurple), var(--nightPurple));
+  background: linear-gradient(135deg, var(--deepIndigo), var(--deepGreen));
   overflow-x: hidden;
   color: var(--lightGrayishBlue);
 }

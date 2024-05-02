@@ -29,6 +29,31 @@
     width: 100%;
 }
 
+.slider_container {
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid white;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider_left {
+    transform: translateX(var(--slideTransformLeft));
+    transition: var(--transition);
+}
+
+.slider_right {
+    transform: translateX(var(--slideTransformRight));
+    transition: var(--transition);
+}
+
+.slider_element {
+    min-width: 100%;
+}
+
 /* @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);

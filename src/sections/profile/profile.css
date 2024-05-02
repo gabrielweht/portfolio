@@ -18,7 +18,7 @@
 .headerPresentation > img {
     width: 15rem;
     border-radius: 50%;
-    border: 2px solid var(--paleLime);
+    border: 2px solid var(--sunriseOrange);
     margin-bottom: 2rem;
 }
 
@@ -45,7 +45,7 @@
     margin: 2rem;
     padding-right: .5rem;
     text-align: center;
-    color: var(--paleLime);
+    color: var(--sunriseOrange);
 }
 
 .divAboutMe {
