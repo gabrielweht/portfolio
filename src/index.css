@@ -14,6 +14,7 @@
   --deepSeaBlue: #064663;
   --deepIndigo: #041C32;
   --deepGreen: #041320;
+  --deepBlue: #040B12;
 
 
   --slideTransformRight: 0;
@@ -25,8 +26,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--deepIndigo), var(--deepGreen));
-  overflow-x: hidden;
+  background: linear-gradient(135deg, var(--deepBlue), var(--deepGreen), var(--deepIndigo));
   color: var(--lightGrayishBlue);
 }
 

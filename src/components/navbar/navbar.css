@@ -8,9 +8,11 @@
     top: 0;
     width: 4rem;
     height: 100vh;
-    background-color: var(--deepGreen);
+    background-color: var(--deepBlue);
+    box-shadow: 0 2px 15px -10px hsla(0, 0%, 100%, .25);
     display: grid;
     grid-template-rows: 2fr 1fr;
+    z-index: 999;
 }
 
 .ulIcons {
@@ -56,10 +58,11 @@
     display: grid;
     grid-template-rows: 2fr 1fr;
     left: 4rem;
+    z-index: 999;
 }
 
 .spanTextContainer {
-    background-color: var(--deepIndigo);
+    background-color: var(--deepGreen);
     display: flex;
     justify-content: center;
     align-items: center;
