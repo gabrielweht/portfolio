@@ -45,6 +45,156 @@ export const stacksList = [
                 stack: 'CSS3',
                 level: 'Intermidiate',
                 logo: SiCss3
+            },
+            {
+                stack: 'ReactJS',
+                level: 'Intermidiate',
+                logo: iconReact
+            },
+            {
+                stack: 'Redux',
+                level: 'Intermidiate',
+                logo: SiRedux
+            },
+            {
+                stack: 'JavaScript',
+                level: 'Intermediate',
+                logo: Javascript
+            },
+            {
+                stack: 'TypeScript',
+                level: 'Intermidiate',
+                logo: SiTypescript
+            },
+            {
+                stack: 'HTML5',
+                level: 'Intermidiate',
+                logo: SiHtml5
+            },
+            {
+                stack: 'CSS3',
+                level: 'Intermidiate',
+                logo: SiCss3
+            },
+            {
+                stack: 'ReactJS',
+                level: 'Intermidiate',
+                logo: iconReact
+            },
+            {
+                stack: 'Redux',
+                level: 'Intermidiate',
+                logo: SiRedux
+            },
+            {
+                stack: 'JavaScript',
+                level: 'Intermediate',
+                logo: Javascript
+            },
+            {
+                stack: 'TypeScript',
+                level: 'Intermidiate',
+                logo: SiTypescript
+            },
+            {
+                stack: 'HTML5',
+                level: 'Intermidiate',
+                logo: SiHtml5
+            },
+            {
+                stack: 'CSS3',
+                level: 'Intermidiate',
+                logo: SiCss3
+            },
+            {
+                stack: 'ReactJS',
+                level: 'Intermidiate',
+                logo: iconReact
+            },
+            {
+                stack: 'Redux',
+                level: 'Intermidiate',
+                logo: SiRedux
+            },
+            {
+                stack: 'JavaScript',
+                level: 'Intermediate',
+                logo: Javascript
+            },
+            {
+                stack: 'TypeScript',
+                level: 'Intermidiate',
+                logo: SiTypescript
+            },
+            {
+                stack: 'HTML5',
+                level: 'Intermidiate',
+                logo: SiHtml5
+            },
+            {
+                stack: 'CSS3',
+                level: 'Intermidiate',
+                logo: SiCss3
+            },
+            {
+                stack: 'ReactJS',
+                level: 'Intermidiate',
+                logo: iconReact
+            },
+            {
+                stack: 'Redux',
+                level: 'Intermidiate',
+                logo: SiRedux
+            },
+            {
+                stack: 'JavaScript',
+                level: 'Intermediate',
+                logo: Javascript
+            },
+            {
+                stack: 'TypeScript',
+                level: 'Intermidiate',
+                logo: SiTypescript
+            },
+            {
+                stack: 'HTML5',
+                level: 'Intermidiate',
+                logo: SiHtml5
+            },
+            {
+                stack: 'CSS3',
+                level: 'Intermidiate',
+                logo: SiCss3
+            },
+            {
+                stack: 'ReactJS',
+                level: 'Intermidiate',
+                logo: iconReact
+            },
+            {
+                stack: 'Redux',
+                level: 'Intermidiate',
+                logo: SiRedux
+            },
+            {
+                stack: 'JavaScript',
+                level: 'Intermediate',
+                logo: Javascript
+            },
+            {
+                stack: 'TypeScript',
+                level: 'Intermidiate',
+                logo: SiTypescript
+            },
+            {
+                stack: 'HTML5',
+                level: 'Intermidiate',
+                logo: SiHtml5
+            },
+            {
+                stack: 'CSS3',
+                level: 'Intermidiate',
+                logo: SiCss3
             }
         ]
     },
@@ -53,35 +203,186 @@ export const stacksList = [
         title: "Backend Skills",
         stacks: [
             {
-                stack: 'C#',
-                level: 'Initial',
-                logo: SiCsharp
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
             },
             {
-                stack: '.Net',
-                level: 'Intermidiate',
-                logo: SiDotnet
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
             },
             {
-                stack: 'NodeJS',
-                level: 'Intermidiate',
-                logo: SiNodedotjs
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
             },
             {
-                stack: 'SQL Server',
-                level: 'Intermidiate',
-                logo: SiMicrosoftsqlserver
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
             },
             {
-                stack: 'PostgreSQL',
-                level: 'Intermidiate',
-                logo: SiPostgresql
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
             },
             {
-                stack: 'Sequelize',
-                level: 'Intermidiate',
-                logo: SiSequelize
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            },
+            {
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
+            },
+            {
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
+            },
+            {
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
+            },
+            {
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
+            },
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            },
+            {
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
+            },
+            {
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
+            },
+            {
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
+            },
+            {
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
+            },
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            },
+            {
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
+            },
+            {
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
+            },
+            {
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
+            },
+            {
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
+            },
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            },
+            {
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
+            },
+            {
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
+            },
+            {
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
+            },
+            {
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
+            },
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            },
+            {
+                "stack": "Sequelize",
+                "level": "Intermidiate",
+                "logo": SiSequelize
+            },
+            {
+                "stack": "PostgreSQL",
+                "level": "Intermidiate",
+                "logo": SiPostgresql
+            },
+            {
+                "stack": "SQL Server",
+                "level": "Intermidiate",
+                "logo": SiMicrosoftsqlserver
+            },
+            {
+                "stack": "NodeJS",
+                "level": "Intermidiate",
+                "logo": SiNodedotjs
+            },
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
             }
         ]
     }
 ]
+
