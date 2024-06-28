@@ -4,7 +4,6 @@ function Projects() {
 
     return (
         <section className='sectionStyles section'>
-            Hola, soy Project
         </section>
     )
 }
