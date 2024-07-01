@@ -1,0 +1,72 @@
+.divContainerProjectCard {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 25rem;
+  padding: 2rem;
+  border: 1px solid rgba(225, 228, 232, 0.2);
+  border-radius: 1rem;
+}
+
+.divContainerImageButtons {
+  display: flex;
+  border: none;
+}
+
+.divContainerImageButtons > button {
+  border: 1px solid var(--lightGrayishBlue);
+  background-color: transparent;
+  border-radius: .8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:.5rem;
+
+}
+
+.imageButton {
+  width: 2.5rem;
+  height: auto;
+}
+
+.imgProjectCard {
+  width: 100%;
+  border-radius: 1rem;
+
+}
+
+.divLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.aWebSite {
+  text-decoration: none;
+  color: var(--lightGrayishBlue);
+  border: 1px solid var(--lightGrayishBlue);
+  padding: .5rem;
+  border-radius: 2rem;
+  width: 40%;
+  background-color: var(--deepSeaBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aGithub {
+  text-decoration: none;
+  color: var(--lightGrayishBlue);
+  border: 1px solid var(--lightGrayishBlue);
+  padding: .5rem;
+  width: 40%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconLinks {
+  margin-left: .5rem;
+}
+
