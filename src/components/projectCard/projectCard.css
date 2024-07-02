@@ -1,44 +1,137 @@
 .divContainerProjectCard {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 25rem;
-  padding: 2rem;
+  background-color: rgba(4,11,18, 0.3);
+  max-width: 40%;
+  padding: 2rem 2rem 0 2rem;
+  height: fit-content;
   border: 1px solid rgba(225, 228, 232, 0.2);
-  border-radius: 1rem;
+  border-radius: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.divContainerImages{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
 }
 
 .divContainerImageButtons {
   display: flex;
   border: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
-.divContainerImageButtons > button {
-  border: 1px solid var(--lightGrayishBlue);
+.buttonImage {
   background-color: transparent;
-  border-radius: .8rem;
+  border-radius: .6rem;
   width: 3.5rem;
   height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:.5rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px 2px var(--deepSeaBlue);
+  border: 1px solid rgba(225, 228, 232, 0.2);
+}
 
+.buttonImage:hover{
+  transition: .2s;
+  box-shadow: 0 0 5px 4px var(--deepSeaBlue);
+}
+
+.buttonDisactive {
+  background-color: transparent;
+  border-radius: .6rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  border: none;
+}
+
+.buttonDisactive:hover{
+  transition: .2s;
+  box-shadow: 0 0 5px 2px var(--deepSeaBlue); 
 }
 
 .imageButton {
   width: 2.5rem;
   height: auto;
+  margin: .5rem;
 }
 
 .imgProjectCard {
-  width: 100%;
+  max-width: 80%;
+  height: auto;
   border-radius: 1rem;
+  aspect-ratio: 4/3;
+}
 
+.imageDisable{
+  display: none;
+}
+
+.divContainerProjectCard > h3 {
+  margin-top: 3rem;
+}
+
+.divStackContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+}
+
+.divStackIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border: 1px solid rgba(225, 228, 232, 0.2);
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+  background-color: rgba(4,11,18, 0.6);
+}
+
+.divStackIconContainer > img {
+  width: 1rem;
+  height: fit-content;
+}
+
+.divStackIconContainer > h6 {
+  font-size: .8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.divContainerProjectCard > p {
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 4rem;
+  margin: 1rem 0;
 }
 
 .divLinks {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 2rem;
+  height: 2.5rem;
 }
 
 .aWebSite {
@@ -48,10 +141,22 @@
   padding: .5rem;
   border-radius: 2rem;
   width: 40%;
+  height: fit-content;
   background-color: var(--deepSeaBlue);
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  margin: .1rem;
+}
+
+.aWebSite:hover {
+  transition: .1s;
+  box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+  padding: .6rem;
+  margin: 0
 }
 
 .aGithub {
@@ -60,10 +165,23 @@
   border: 1px solid var(--lightGrayishBlue);
   padding: .5rem;
   width: 40%;
+  height: fit-content;
   border-radius: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+  margin: .1rem;
+}
+
+.aGithub:hover {
+  background-color: #4d1e7db3;
+  transition: .1s;
+  box-shadow: 0 0 20px 2px #4d1e7db3;
+  padding: .6rem;
+  margin: 0;
 }
 
 .iconLinks {

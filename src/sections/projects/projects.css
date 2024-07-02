@@ -1,3 +1,14 @@
 .sectionStyles {
-    padding: 5rem 4rem 2.5rem 8rem;
+    padding: 2.5rem 8rem 2.5rem 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.divContainerProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem
+}   
