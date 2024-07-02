@@ -4,6 +4,7 @@ import Navbar from './components/navbar/navbar'
 import Profile from './sections/profile/profile'
 import Stack from './sections/stack/stack'
 import Projects from './sections/projects/projects'
+import { Contact } from './sections/contact/contact'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
         <Profile />
         <Stack />
         <Projects />
+        <Contact />
         <Navbar />
     </>
   )
