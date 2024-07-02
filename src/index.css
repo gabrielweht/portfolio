@@ -1,7 +1,5 @@
 :root {
   font-family: Segoe WPC, Segoe UI, sans-serif;
-  line-height: 1.4em;
-  font-weight: 400;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,6 +26,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, var(--deepBlue), var(--deepGreen), var(--deepIndigo));
   color: var(--lightGrayishBlue);
+  overflow-x: hidden;
 }
 
 
@@ -38,4 +37,10 @@ body {
 
 section {
   padding: 2.5rem 4rem 2.5rem 8rem;
+}
+
+h5 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 3rem 0;
 }
