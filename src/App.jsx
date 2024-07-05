@@ -20,7 +20,7 @@ function App() {
 
       const viewportHeight = window.innerHeight;
 
-      const middlePosition = (scrollTop + viewportHeight) / 3;
+      const middlePosition = (scrollTop + viewportHeight) / 20;
 
       const sections = document.querySelectorAll('.section');
       let visibleSectionId = '';
