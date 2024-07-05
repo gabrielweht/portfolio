@@ -40,7 +40,7 @@ export function ProjectCard({ children }) {
   }
 
   return (
-    <div className="divContainerProjectCard">
+    <div className="divContainerProjectCard borderRadiusCards">
       <div className="divContainerImages">
         <div className="divContainerImageButtons" id={children.title}>
           {children.images.map((image, key) => {
