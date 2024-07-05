@@ -44,3 +44,7 @@ h5 {
   font-weight: 700;
   margin: 0 0 3rem 0;
 }
+
+.borderRadiusCards {
+  border-radius: .8rem;
+}
