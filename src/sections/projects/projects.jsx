@@ -6,7 +6,7 @@ function Projects() {
 
     return (
         <section className='sectionStyles section' id='projects'>
-            <h5>Projects</h5>
+            <h5>MY PROJECTS</h5>
             <div className='divContainerProjects'>
                 {
                     projectList.map((project, key) => {

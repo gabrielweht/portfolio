@@ -5,7 +5,7 @@ import StackListMap from '../../components/stackListMap/stackListMap.jsx'
 function Stack() {
     return (
         <section className='stackSection section' id='stacks'>
-            <h5>Skills Overview</h5>
+            <h5>MY SKILLS</h5>
             <div className='divBigStacks'>
                 {
                     stacksList.map((stack, key) => {
