@@ -107,10 +107,10 @@ export function ContactForm() {
         ref={refForm}
         action=""
         onSubmit={handleSubmit}
-        className="formStyles"
+        className="formStyles borderRadiusCards"
       >
         <div className="divNameForm">
-          <fieldset className="fieldsetStyles marginRight">
+          <fieldset className="fieldsetStyles">
             <label
               htmlFor=""
               className={`labelStyles ${errors.firstName ? 'labelError' : undefined}`}
@@ -125,7 +125,7 @@ export function ContactForm() {
               onChange={handleInputChange}
               onFocus={event => scrollToElement(event.target)}
               placeholder="John"
-              className={`inputStylesName ${errors.firstName ? 'inputStyleError' : undefined}`}
+              className={`inputStyles ${errors.firstName ? 'inputStyleError' : undefined}`}
             />
           </fieldset>
           <fieldset className="fieldsetStyles">
@@ -143,7 +143,7 @@ export function ContactForm() {
               onChange={handleInputChange}
               onFocus={event => scrollToElement(event.target)}
               placeholder="Smith"
-              className={`inputStylesName ${errors.lastName ? 'inputStyleError' : undefined}`}
+              className={`inputStyles ${errors.lastName ? 'inputStyleError' : undefined}`}
             />
           </fieldset>
         </div>
@@ -162,7 +162,7 @@ export function ContactForm() {
             onChange={handleInputChange}
             onFocus={event => scrollToElement(event.target)}
             placeholder="example@example.com"
-            className={`inputStyles ${errors.email ? 'inputStyleError' : undefined}`}
+            className={`inputStyles width100 ${errors.email ? 'inputStyleError' : undefined}`}
           />
         </fieldset>
         <fieldset className="fieldsetStyles">

@@ -3,8 +3,8 @@ import './contact.css'
 
 export function Contact () {
     return(
-        <section className='sectionContainerContact'>
-            <h5>Contact</h5>
+        <section className='sectionContainerContact section' id='contact'>
+            <h5>CONTACT ME</h5>
             <ContactForm />
         </section>
     )
