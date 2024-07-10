@@ -11,6 +11,16 @@ export function ProjectCard({ children }) {
       cabsaMobile: false,
       cabsaTablet: false,
     },
+    Kurve: {
+      kurveDesktop: true,
+      kurveMobile: false,
+      kurveTablet: false
+    },
+    RyM: {
+      RyMdesktop: true,
+      RyMmobile: false,
+      RyMtablet: false
+    }
   });
 
   function activeImage(e) {

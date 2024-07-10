@@ -76,7 +76,7 @@
   max-width: 80%;
   height: auto;
   border-radius: 1rem;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/4;
 }
 
 .imageDisable{
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  gap: .5rem;
   border: 1px solid rgba(225, 228, 232, 0.2);
   padding: .3rem 1rem;
   border-radius: 2rem;

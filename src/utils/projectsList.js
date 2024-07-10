@@ -1,9 +1,16 @@
-import cabsaImage from '../assets/CabsaImage.webp'
+import cabsaDesktop from '../assets/cabsaDesktop.webp'
 import SiCss3 from "../assets/css.webp";
 import SiTypescript from "../assets/ts.webp";
 import SiNextdotjs from "../assets/nextjs.webp";
-import dotnet from '../assets/dotnet.webp'
-import css from '../assets/css.webp'
+import cabsaMobile from '../assets/cabsaMobile.webp'
+import cabsaTablet from '../assets/cabsaTablet.webp'
+import kurveDesktop from '../assets/kurveDesktop.webp'
+import kurveMobile from '../assets/kurveMobile.webp'
+import kurveTablet from '../assets/kurveTablet.webp'
+import RyMdesktop from '../assets/RyMdesktop.webp'
+import RyMmobile from '../assets/RyMmobile.webp'
+import RyMtablet from '../assets/RyMtablet.webp'
+
 
 export const projectList = [
   {
@@ -11,15 +18,15 @@ export const projectList = [
     images: [
       {
         title: 'cabsaDesktop',
-        image: cabsaImage
+        image: cabsaDesktop
       },
       {
         title: 'cabsaMobile',
-        image: dotnet
+        image: cabsaMobile
       },
       {
         title: 'cabsaTablet',
-        image: css
+        image: cabsaTablet
       }
     ],
     description: 'dsafdasfad adfasfdsfadsfads adf adsf dsfads fdsf adsfadsfadsfafa fas fasfadfasfdsafadsf a fdffa fadsf aaaaadfasdfadsfasdfads af adsfadsf asfdsfa afads afadsf ',
@@ -41,19 +48,19 @@ export const projectList = [
     github: ''
   },
   {
-    title: 'CABSA',
+    title: 'Kurve',
     images: [
       {
-        title: 'cabsaDesktop',
-        image: cabsaImage
+        title: 'kurveDesktop',
+        image: kurveDesktop
       },
       {
-        title: 'cabsaMobile',
-        image: dotnet
+        title: 'kurveMobile',
+        image: kurveMobile
       },
       {
-        title: 'cabsaTablet',
-        image: css
+        title: 'kurveTablet',
+        image: kurveTablet
       }
     ],
     description: 'Sitio web de Financiera',
@@ -75,19 +82,19 @@ export const projectList = [
     github: 'https://github.com/anmedina-arg/CABSA'
   },
   {
-    title: 'CABSA',
+    title: 'RyM',
     images: [
       {
-        title: 'cabsaDesktop',
-        image: cabsaImage
+        title: 'RyMdesktop',
+        image: RyMdesktop
       },
       {
-        title: 'cabsaMobile',
-        image: dotnet
+        title: 'RyMmobile',
+        image: RyMmobile
       },
       {
-        title: 'cabsaTablet',
-        image: css
+        title: 'RyMtablet',
+        image: RyMtablet
       }
     ],
     description: 'Sitio web de Financiera',
