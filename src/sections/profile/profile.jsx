@@ -1,12 +1,13 @@
+import ImgProfile from '../../components/imgProfile/ImgProfile';
 import './profile.css'
-import imgProfile from "../../assets/imgProfile.webp"
+
 
 function Profile() {
 
     return (
         <section id='profile' className="sectionProfile section">
             <header className='headerPresentation'>
-                <img src={imgProfile} alt="Profile Photo" />
+                <ImgProfile />
                 <div className='typingAnimation'>
                     <h1>{'Hello, I´m Gabriel Weht'}</h1>
                 </div>
