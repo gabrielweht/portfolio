@@ -5,6 +5,7 @@ import Profile from './sections/profile/profile'
 import Stack from './sections/stack/stack'
 import Projects from './sections/projects/projects'
 import { Contact } from './sections/contact/contact'
+import { Footer } from './components/footer/footer'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
         <Projects />
         <Contact />
         <Navbar />
+        <Footer />
     </>
   )
 }
