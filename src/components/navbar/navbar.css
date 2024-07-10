@@ -73,6 +73,7 @@
     height: auto;
     position: relative;
     left: 10px;
+    padding: .1rem 0 .2rem 0;
 }
 
 .spanTextContainer:before {
