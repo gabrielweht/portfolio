@@ -2,6 +2,7 @@
 import './contactForm.css';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FiSend } from "react-icons/fi";
 
 export function ContactForm() {
   const [click, setClick] = useState(false);
@@ -179,7 +180,8 @@ export function ContactForm() {
           ></textarea>
         </fieldset>
         <button className={'btnStyles'}>
-          Submit
+          Submit 
+          <FiSend />
         </button>
         {errors.firstName ||
         errors.lastName ||

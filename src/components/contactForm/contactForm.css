@@ -102,13 +102,14 @@ input:-webkit-autofill:focus {
   border-radius: .5rem;
   background-color: var(--deepSeaBlue);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: .5rem 1.5rem;
   border: 1px solid var(--lightGrayishBlue);
+  gap: .5rem;
 }
 
 .btnStyles:hover {
