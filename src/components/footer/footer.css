@@ -1,0 +1,101 @@
+.sectionFooter {
+  padding-left: 12.05rem;
+  border: 1px solid var(--deepSeaBlue);
+  border-radius: 2rem 2rem 0 0;
+  margin-left: 3.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background-color: var(--deepGreen);
+  box-shadow: 0 0 10px 0 var(--deepSeaBlue);
+}
+
+.divLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myLogo {
+  width: 15rem;
+}
+
+.divLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.aIconLinks {
+  color: var(--slateGray);
+}
+
+.iconFooter {
+  font-size: 1.5rem;
+}
+
+.aIconLinks:hover {
+  color: var(--lightGrayishBlue);
+}
+
+.divSiteMap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.divSiteMap > span {
+  margin-top: 1.4rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: .8rem 0 0 0;
+}
+
+li {
+  margin: .6rem 0 0 0;
+}
+
+.aFooterLinks {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--lightGrayishBlue);
+}
+
+.aFooterLinks:hover {
+  transition: .5s;
+  color: #0fa4ea;
+}
+
+.logoFooter {
+  width: 1rem;
+  height: auto;
+}
+
+.logoFooterCss {
+  width: 1.3rem;
+  margin-left: -.2rem;
+  margin-right: -.1rem;
+}
+
+.ulAbout {
+  margin: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+.ulAbout > li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  font-weight: 400;
+}
