@@ -36,7 +36,7 @@ body {
 }
 
 section {
-  padding: 2.5rem 4rem 2.5rem 8rem;
+  padding: 2.5rem 12rem 2.5rem 16rem;
 }
 
 h5 {
@@ -47,4 +47,8 @@ h5 {
 
 .borderRadiusCards {
   border-radius: .8rem;
+}
+
+a {
+  text-decoration: none;
 }
