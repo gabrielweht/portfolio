@@ -4,6 +4,8 @@ import StackCard from '../stackCard/stackCard'
 
 function StackListMap({ stack }) {
 
+    const listStack = [...stack.stacks, ...stack.stacks, ...stack.stacks, ...stack.stacks, ...stack.stacks]
+
     return (
         <div className='divStacks'>
             <h3>
@@ -11,7 +13,7 @@ function StackListMap({ stack }) {
             </h3>
             <div className={`slider_container`}>
                 <div className={`${stack.id === 2 ? 'slider_right' : 'slider_left'} slider`}>
-                    {stack.stacks.map((prog, key) => {
+                    {listStack.map((prog, key) => {
                         const LogoStack = prog.logo
 
                         return (

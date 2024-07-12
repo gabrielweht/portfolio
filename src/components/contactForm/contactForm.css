@@ -112,7 +112,7 @@ input:-webkit-autofill:focus {
   gap: .5rem;
 }
 
-.btnStyles:hover {
+.btnStyles:active {
   cursor: pointer;
   transition: .1s;
   box-shadow: 0 0 20px 2px var(--deepSeaBlue);
@@ -162,4 +162,12 @@ input:-webkit-autofill:focus {
 
 .errorDiv {
   height: 1.3rem;
+}
+
+@media (hover:hover) {
+  .btnStyles:hover {
+    cursor: pointer;
+    transition: .1s;
+    box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+  }
 }

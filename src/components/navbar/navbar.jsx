@@ -7,6 +7,7 @@ import IconsDiv from './iconsDiv/iconsDiv';
 function Navbar() {
     const [iconHovered, setIconHovered] = useState(null)
     const [hash, setHash] = useState('');
+    const hasMouse = window.matchMedia('(pointer:fine)').matches
     
     const firstHash = window.location.hash
 
@@ -33,6 +34,12 @@ function Navbar() {
 
     function iconDisplay(hrefValue, keyValue) {
 
+        if (!hasMouse) {
+            return {
+                display: 'none'
+            }
+        }
+
         if (iconHovered !== hrefValue) {
             return {
                 display: 'none'
@@ -45,7 +52,7 @@ function Navbar() {
     }
 
     return (
-        <nav className='sectionNavbar'>
+        <nav className='sectionNavbar' id='navbar'>
             <IconsDiv
                 navbarLinks={navbarLinks}
                 setIconHovered={setIconHovered}

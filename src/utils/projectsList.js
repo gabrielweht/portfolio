@@ -1,20 +1,27 @@
-import cabsaDesktop from '../assets/cabsaDesktop.webp'
+import cabsaDesktop from '../assets/cabsaDesktop.webp';
+import cabsaMobile from '../assets/cabsaMobile.webp';
+import cabsaTablet from '../assets/cabsaTablet.webp';
+import kurveDesktop from '../assets/kurveDesktop.webp';
+import kurveMobile from '../assets/kurveMobile.webp';
+import kurveTablet from '../assets/kurveTablet.webp';
+import RyMdesktop from '../assets/RyMdesktop.webp';
+import RyMmobile from '../assets/RyMmobile.webp';
+import RyMtablet from '../assets/RyMtablet.webp';
 import SiCss3 from "../assets/css.webp";
 import SiTypescript from "../assets/ts.webp";
 import SiNextdotjs from "../assets/nextjs.webp";
-import cabsaMobile from '../assets/cabsaMobile.webp'
-import cabsaTablet from '../assets/cabsaTablet.webp'
-import kurveDesktop from '../assets/kurveDesktop.webp'
-import kurveMobile from '../assets/kurveMobile.webp'
-import kurveTablet from '../assets/kurveTablet.webp'
-import RyMdesktop from '../assets/RyMdesktop.webp'
-import RyMmobile from '../assets/RyMmobile.webp'
-import RyMtablet from '../assets/RyMtablet.webp'
+import Angular from '../assets/angular.webp';
+import Vite from '../assets/viteLogo.webp';
+import JavaScript from '../assets/js.webp';
 
 
 export const projectList = [
   {
-    title: 'CABSA',
+    id: 'CABSA',
+    title: 'Cabsa Intl.',
+    description: 'Website of the financial company Cabsa Intl, where you can see information about the services they offer and a contact form connected to EmailJS.',
+    url: 'https://cabsaintl.com/',
+    github: '',
     images: [
       {
         title: 'cabsaDesktop',
@@ -29,10 +36,9 @@ export const projectList = [
         image: cabsaTablet
       }
     ],
-    description: 'dsafdasfad adfasfdsfadsfads adf adsf dsfads fdsf adsfadsfadsfafa fas fasfadfasfdsafadsf a fdffa fadsf aaaaadfasdfadsfasdfads af adsfadsf asfdsfa afads afadsf ',
     stack: [
       {
-        title: 'Next JS',
+        title: 'NextJS',
         icon: SiNextdotjs
       },
       {
@@ -44,11 +50,13 @@ export const projectList = [
         icon: SiCss3
       },
     ],
-    url: 'https://cabsaintl.com/',
-    github: ''
   },
   {
-    title: 'Kurve',
+    id: 'Kurve',
+    title: 'Kurve Inc.',
+    description: 'Sitio web informativo de la empresa Kurve para informar sobre su IA y sus beneficios. With a contact form connected to EmailJS.',
+    url: 'https://kurve.ai/',
+    github: '',
     images: [
       {
         title: 'kurveDesktop',
@@ -63,26 +71,27 @@ export const projectList = [
         image: kurveTablet
       }
     ],
-    description: 'Sitio web de Financiera',
     stack: [
       {
-        title: 'Next JS',
-        icon: SiNextdotjs
+        title: 'ViteJS',
+        icon: Vite
       },
       {
-        title: 'TypeScript',
-        icon: SiTypescript
+        title: 'JavaScript',
+        icon: JavaScript
       },
       {
         title: 'CSS3',
         icon: SiCss3
       },
-    ],
-    url: 'https://cabsaintl.com/',
-    github: 'https://github.com/anmedina-arg/CABSA'
+    ]
   },
   {
-    title: 'RyM',
+    id: 'RyM',
+    title: 'Rick & Morty',
+    description: 'Practice website to show my Angular skills. The page consumes data from the Rick and Morty API.',
+    url: 'https://rickandmorty-proyect-gw.vercel.app/personajes',
+    github: 'https://github.com/gabrielweht/Rick-Morty',
     images: [
       {
         title: 'RyMdesktop',
@@ -97,11 +106,10 @@ export const projectList = [
         image: RyMtablet
       }
     ],
-    description: 'Sitio web de Financiera',
     stack: [
       {
-        title: 'Next JS',
-        icon: SiNextdotjs
+        title: 'Angular',
+        icon: Angular
       },
       {
         title: 'TypeScript',
@@ -112,7 +120,6 @@ export const projectList = [
         icon: SiCss3
       },
     ],
-    url: 'https://cabsaintl.com/',
-    github: 'https://github.com/anmedina-arg/CABSA'
+    
   }
 ]

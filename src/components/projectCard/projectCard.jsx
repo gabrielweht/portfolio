@@ -52,11 +52,11 @@ export function ProjectCard({ children }) {
   return (
     <div className="divContainerProjectCard borderRadiusCards">
       <div className="divContainerImages">
-        <div className="divContainerImageButtons" id={children.title}>
+        <div className="divContainerImageButtons" id={children.id}>
           {children.images.map((image, key) => {
             return (
               <button onClick={activeImage} id={image.title} key={key} className={
-                imagesActives[children.title][image.title]
+                imagesActives[children.id][image.title]
                   ? "buttonImage"
                   : "buttonDisactive"
               }>
@@ -76,7 +76,7 @@ export function ProjectCard({ children }) {
               src={image.image}
               alt={image.title}
               className={
-                imagesActives[children.title][image.title]
+                imagesActives[children.id][image.title]
                   ? "imgProjectCard"
                   : "imageDisable"
               }

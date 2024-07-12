@@ -43,7 +43,7 @@
   border: 1px solid rgba(225, 228, 232, 0.2);
 }
 
-.buttonImage:hover{
+.buttonImage:active{
   transition: .2s;
   box-shadow: 0 0 5px 4px var(--deepSeaBlue);
 }
@@ -61,7 +61,7 @@
   border: none;
 }
 
-.buttonDisactive:hover{
+.buttonDisactive:active{
   transition: .2s;
   box-shadow: 0 0 5px 2px var(--deepSeaBlue); 
 }
@@ -84,7 +84,7 @@
 }
 
 .divContainerProjectCard > h3 {
-  margin-top: 3rem;
+  margin-top: 0;
 }
 
 .divStackContainer{
@@ -153,7 +153,7 @@
   margin: .1rem;
 }
 
-.aWebSite:hover {
+.aWebSite:active {
   transition: .1s;
   box-shadow: 0 0 20px 2px var(--deepSeaBlue);
   padding: .6rem;
@@ -177,7 +177,7 @@
   margin: .1rem;
 }
 
-.aGithub:hover {
+.aGithub:active {
   background-color: #4d1e7db3;
   transition: .1s;
   box-shadow: 0 0 20px 2px #4d1e7db3;
@@ -189,3 +189,29 @@
   margin-left: .5rem;
 }
 
+@media (hover:hover) {
+  .buttonImage:hover{
+    transition: .2s;
+    box-shadow: 0 0 5px 4px var(--deepSeaBlue);
+  }
+  
+  .buttonDisactive:hover{
+    transition: .2s;
+    box-shadow: 0 0 5px 2px var(--deepSeaBlue); 
+  }
+
+  .aWebSite:hover {
+    transition: .1s;
+    box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+    padding: .6rem;
+    margin: 0
+  }
+
+  .aGithub:hover {
+    background-color: #4d1e7db3;
+    transition: .1s;
+    box-shadow: 0 0 20px 2px #4d1e7db3;
+    padding: .6rem;
+    margin: 0;
+  }
+}

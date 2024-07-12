@@ -13,7 +13,7 @@
     display: grid;
     grid-template-rows: 2fr 1fr;
     z-index: 999;
-    box-shadow: -5px 0px 20px 0px var(--deepSeaBlue)
+    box-shadow: -5px 0px 20px 0px var(--deepSeaBlue);
 }
 
 .ulIcons {
@@ -42,7 +42,7 @@
     line-height: 3px;
 }
 
-.icon:hover {
+.icon:active {
     color: var(--lightGrayishBlue)
 }
 
@@ -123,4 +123,10 @@
 @keyframes spans {
     0% { width: 0; }
     100% {width: 100%;}
+}
+
+@media (hover:hover) {
+    .icon:hover {
+        color: var(--lightGrayishBlue)
+    }
 }

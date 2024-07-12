@@ -16,15 +16,7 @@ function Profile() {
                 </div>
             </header>
             <div className='divAboutMe'>
-                <p>Highly motivated Software Developer with experience in development and
-                    application maintenance. Passionate about problem solving
-                    and the creation of innovative and scalable solutions. Experience
-                    working in NodeJS, React, Redux, Sequelize, SQL Server among others
-                    technologies of the sector. With creative thinking, autonomy, resolution of
-                    problems, customer and results orientation, adaptability, ability
-                    to work as a team in an agile development environment. My goal is to continue
-                    growing professionally and learning new skills to improve my
-                    performance and contribute to the success of my team and the company.</p>
+                <p>Driven Software Developer skilled in NodeJS, React, Redux, Sequelize, and SQL Server. Passionate about creating innovative, scalable solutions and solving complex problems. Adept in agile environments with a strong focus on teamwork, customer satisfaction, and results. Eager to grow professionally, learn new skills, and contribute to team success.</p>
             </div>
         </section>
     )

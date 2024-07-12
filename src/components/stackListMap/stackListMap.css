@@ -10,6 +10,7 @@
 .divStacks > h3 {
     margin-bottom: 4rem;
     margin-top: 0;
+    color: var(--sunriseOrange);
 }
 
 .divStacksCards {
