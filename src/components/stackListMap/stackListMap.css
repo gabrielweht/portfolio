@@ -89,3 +89,9 @@
         transform: translateX(100);
     }
 }
+
+@media (width < 768px) {
+    .slider {
+        width: 8rem;
+    }
+}

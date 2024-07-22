@@ -26,3 +26,9 @@
     -webkit-mask-composite: destination-in;
     mask-composite: intersect;
 }
+
+@media (width < 768px) {
+  .imgProfile {
+    margin-bottom: 2.5rem;
+  }
+}

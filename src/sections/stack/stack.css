@@ -21,3 +21,9 @@
 .logos {
     width: 4rem;
 }
+
+@media (width < 768px) {
+    .logos {
+        width: 3rem;
+    }
+}

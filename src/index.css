@@ -52,3 +52,28 @@ h5 {
 a {
   text-decoration: none;
 }
+
+body::-webkit-scrollbar {
+  width: .8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--lightGrayishBlue);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--deepSeaBlue);
+  border-radius: 2rem;
+  border: 0.15rem solid var(--lightGrayishBlue);
+}
+
+
+@media (width < 768px) { 
+  section {
+    padding: 2.5rem 1rem 2.5rem 1rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+}

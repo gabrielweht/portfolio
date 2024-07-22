@@ -16,3 +16,16 @@
     align-items: center;
     width: 100%;
 }
+
+@media (width < 768px) {
+    .liIcons {
+        margin: 0;
+    }
+
+    .liActive {
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid var(--deepSeaBlue);
+        border-top: 3px solid transparent;
+    }
+}

@@ -75,3 +75,39 @@
         border-color: transparent;
     }
 }
+
+@media (width < 768px) {
+    .sectionProfile {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    .headerPresentation {
+        margin: 0;
+    }
+
+    
+    .typingAnimation {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .typingAnimation > h1 {
+        font-size: 1.8rem;
+    }
+    
+    .typingAnimation > h2 {
+        margin: 0;
+    }
+    
+    .divAboutMe {
+        width: 95%;
+    }
+
+    .divAboutMe > p {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
