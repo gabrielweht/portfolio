@@ -8,7 +8,7 @@ function Navbar() {
     const [iconHovered, setIconHovered] = useState(null)
     const [hash, setHash] = useState('');
     const hasMouse = window.matchMedia('(pointer:fine)').matches
-    
+
     const firstHash = window.location.hash
 
     useEffect(() => {
@@ -52,17 +52,19 @@ function Navbar() {
     }
 
     return (
-        <nav className='sectionNavbar' id='navbar'>
-            <IconsDiv
-                navbarLinks={navbarLinks}
-                setIconHovered={setIconHovered}
-                isActive={isActive}
-            />
-            <Labels
-                navbarLinks={navbarLinks}
-                iconDisplay={iconDisplay}
-            />
-        </nav>
+        <>
+            <nav className='sectionNavbar' id='navbar'>
+                <IconsDiv
+                    navbarLinks={navbarLinks}
+                    setIconHovered={setIconHovered}
+                    isActive={isActive}
+                />
+                <Labels
+                    navbarLinks={navbarLinks}
+                    iconDisplay={iconDisplay}
+                />
+            </nav>
+        </>
     )
 }
 
