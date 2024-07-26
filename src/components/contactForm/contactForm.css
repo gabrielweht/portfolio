@@ -8,7 +8,7 @@
   background-color: rgba(4,11,18, 0.3);
   gap: 1.5rem;
   box-shadow: 10px 8px 20px -4px var(--deepSeaBlue);
-  width: 50%;
+  width: 60%;
 }
 
 .divNameForm {
@@ -49,6 +49,7 @@
   border-radius: 2rem;
   padding: .5rem 1.5rem;
   border: .1rem solid var(--lightGrayishBlue);
+  width: auto;
 }
 
 .inputStyles::placeholder {

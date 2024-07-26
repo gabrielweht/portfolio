@@ -77,3 +77,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem;
   }
 }
+
+@media (768px < width < 1000px) { 
+  section {
+    padding: 2.5rem 4rem 2.5rem 8rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+}
