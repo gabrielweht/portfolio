@@ -9,29 +9,30 @@
 
 .headerPresentation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-right: 2rem;
+    width: 100%;
 } 
 
-/* .headerPresentation > img {
-    width: 2rem;
-    margin-bottom: 2rem;
-
-} */
+.divNameTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
 
 
 .typingAnimation {
     width: 100%;
-    height: 4rem;
+    height: auto;
 }
 
 .typingAnimation > h1{
     align-content: center;
     padding-right: .5rem;
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     height: 100%;
     display: inline-block;
     animation: typing 5s steps(40) infinite, cursor .5s step-start infinite alternate;
@@ -41,27 +42,50 @@
 }
 
 .typingAnimation > h2 {
-    font-size: 1.5rem;
-    margin: 2rem;
-    padding-right: .5rem;
-    text-align: center;
+    font-size: 2rem;
     color: var(--sunriseOrange);
+    margin: 0;
 }
 
-.divAboutMe {
+.typingAnimation > h2 > span {
+    color: var(--lightGrayishBlue);
+}
+
+.divButtonsProfile {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: 60%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
 }
 
-.divAboutMe > p {
-    color: var(--lightSilverGray);
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.5;
+.divLinksProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.profileButtons {
+    text-decoration: none;
+    color: var(--lightGrayishBlue);
+    border: 1px solid var(--lightGrayishBlue);
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    height: fit-content;
+    background-color: var(--deepSeaBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    font-weight: 500;
+    margin: .1rem;
+}
+
+.iconProfile {
+    font-size: 1.5rem;
 }
 
 @keyframes typing {
@@ -76,6 +100,22 @@
     }
 }
 
+@media (hover:hover) {
+    .profileButtons:hover {
+        transition: .1s;
+        box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+        padding: .6rem 1.6rem;
+        margin: 0
+    }
+}
+
+.profileButtons:active {
+    transition: .1s;
+    box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+    padding: 1.1rem 1.6rem;
+    margin: 0
+}
+
 @media (width < 768px) {
     .sectionProfile {
         flex-direction: column;
@@ -84,8 +124,12 @@
 
     .headerPresentation {
         margin: 0;
+        flex-direction: column-reverse;
     }
 
+    .divNameTitle {
+        align-items: center;
+    }
     
     .typingAnimation {
         height: 3rem;
@@ -95,19 +139,23 @@
     }
     
     .typingAnimation > h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        text-align: center;
     }
     
     .typingAnimation > h2 {
         margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
     }
     
-    .divAboutMe {
-        width: 95%;
+    .profileButtons {
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
     }
 
-    .divAboutMe > p {
-        font-size: 1.1rem;
-        font-weight: 400;
+    .iconProfile {
+        font-size: 2rem;
     }
 }

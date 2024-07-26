@@ -1,0 +1,43 @@
+.sectionAboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.divAboutMe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.aboutMeImage {
+  width: 30%;
+}
+
+.divAboutMe > p {
+  color: var(--lightSilverGray);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (width < 768px) {
+  .divAboutMe {
+      width: 95%;
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .aboutMeImage{
+    width: 70%;
+  }
+
+  .divAboutMe > p {
+      font-weight: 400;
+  }
+}
