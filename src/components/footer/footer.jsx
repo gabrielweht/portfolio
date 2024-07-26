@@ -12,7 +12,7 @@ export function Footer() {
         <a href="#profile">
           <img src={myLogo} alt="My logo" className='myLogo'/>
         </a>
-        <div className='divLinks'>
+        <div className='divLinksFooter'>
           {navbarLinks[1].list.map((link) => {
             const Icon = link.icon
 
@@ -23,6 +23,22 @@ export function Footer() {
             )
           })}
         </div>
+      </div>
+      <div className='divSiteMap'>
+        SITE MAP
+        <ul>
+          {navbarLinks[0].list.map((link) => {
+            if (link.key >= 3 && link.key <= 6) {
+              return (
+                <li key={link.key}>
+                  <a href={link.href} className='aFooterLinks'>
+                    {link.spanText}
+                  </a>
+                </li>
+              )
+            }
+          })}
+        </ul>
       </div>
       <div className='divSiteMap'>
         ABOUT THIS WEB
@@ -46,22 +62,6 @@ export function Footer() {
           <span style={{'margin': '0'}}>
           by <b>Gabriel Weht</b>
           </span>
-      </div>
-      <div className='divSiteMap'>
-        SITE MAP
-        <ul>
-          {navbarLinks[0].list.map((link) => {
-            if (link.key >= 3 && link.key <= 6) {
-              return (
-                <li key={link.key}>
-                  <a href={link.href} className='aFooterLinks'>
-                    {link.spanText}
-                  </a>
-                </li>
-              )
-            }
-          })}
-        </ul>
       </div>
     </section>
   )
