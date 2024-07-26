@@ -3,6 +3,32 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.divContactForm {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.divContactForm > img {
+    width: 50%;
+    height: auto;
+}
+
+
+@media (width < 768px) {
+    .divContactForm {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .divContactForm > img {
+        width: 70%;
+    }
 }
