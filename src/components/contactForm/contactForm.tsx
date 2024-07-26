@@ -163,7 +163,7 @@ export function ContactForm() {
             onChange={handleInputChange}
             onFocus={event => scrollToElement(event.target)}
             placeholder="example@example.com"
-            className={`inputStyles width100 ${errors.email ? 'inputStyleError' : undefined}`}
+            className={`inputStyles ${errors.email ? 'inputStyleError' : undefined}`}
           />
         </fieldset>
         <fieldset className="fieldsetStyles">

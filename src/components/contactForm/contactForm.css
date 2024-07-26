@@ -8,6 +8,7 @@
   background-color: rgba(4,11,18, 0.3);
   gap: 1.5rem;
   box-shadow: 10px 8px 20px -4px var(--deepSeaBlue);
+  width: 50%;
 }
 
 .divNameForm {
@@ -45,7 +46,7 @@
   line-height: 150%;
   border: none;
   outline: none;
-  border-radius: .5rem;
+  border-radius: 2rem;
   padding: .5rem 1.5rem;
   border: .1rem solid var(--lightGrayishBlue);
 }
@@ -74,7 +75,7 @@ input:-webkit-autofill:focus {
   height: 6rem;
   resize: none;
   outline: none;
-  border-radius: .5rem;
+  border-radius: 1rem;
   padding: .8rem 1.5rem;
 }
 
@@ -99,7 +100,7 @@ input:-webkit-autofill:focus {
 .btnStyles {
   color: var(--lightGrayishBlue);
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 2rem;
   background-color: var(--deepSeaBlue);
   font-size: 1rem;
   font-weight: 400;
@@ -169,5 +170,20 @@ input:-webkit-autofill:focus {
     cursor: pointer;
     transition: .1s;
     box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+  }
+}
+
+@media (width <= 768px) {
+  .formStyles {
+    width: fit-content;
+    min-width: 80%;
+  }
+
+  .divNameForm {
+    flex-direction: column;
+  }
+
+  .messageSent {
+    left: 0;
   }
 }
