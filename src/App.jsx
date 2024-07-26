@@ -6,12 +6,14 @@ import Stack from './sections/stack/stack'
 import Projects from './sections/projects/projects'
 import { Contact } from './sections/contact/contact'
 import { Footer } from './components/footer/footer'
+import { About } from './sections/about/about'
 
 function App() {
 
   const [, setVisibleSection] = useState('');
 
   useEffect(() => {
+
     if (!window.location.hash) {
       window.location.hash = '#profile'
     }
@@ -41,10 +43,15 @@ function App() {
 
     };
 
-    window.addEventListener('scroll', handleScroll);
+    if(window.innerWidth > 991) {
+      window.addEventListener('scroll', handleScroll);
+    }
+
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if(window.innerWidth > 991) {
+        window.removeEventListener('scroll', handleScroll);
+      }
     };
 
   }, [])
@@ -52,6 +59,7 @@ function App() {
   return (
     <>
         <Profile />
+        <About />
         <Stack />
         <Projects />
         <Contact />
