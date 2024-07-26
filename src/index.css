@@ -24,7 +24,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--deepBlue), var(--deepGreen), var(--deepIndigo));
+  background: linear-gradient(135deg, var(--deepBlue), var(--deepIndigo));
   color: var(--lightGrayishBlue);
   overflow-x: hidden;
 }
@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (width < 768px) { 
   section {
-    padding: 2.5rem 1rem 2.5rem 1rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
   }
 
   h5 {
