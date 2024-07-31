@@ -1,35 +1,32 @@
 .formStyles {
+  padding: 2rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(225, 228, 232, 0.2);
-  padding: 2rem;
+  justify-content: center;
+  max-width: 60%;
   background-color: rgba(4,11,18, 0.3);
   gap: 1.5rem;
   box-shadow: 10px 8px 20px -4px var(--deepSeaBlue);
-  width: 60%;
 }
 
 .divNameForm {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
   gap: 1.5rem;
 }
 
-
-.fieldsetStyles {
+.fieldsetStyles{
+  border: none;
   width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: column;
-  border: none;
-  justify-content: space-between;
-  margin: 0;
+  align-items: flex-start;
   padding: 0;
+  margin: 0;
 }
+
 
 .labelStyles {
   color: var(--lightGrayishBlue);
@@ -44,12 +41,15 @@
   font-size: 1rem;
   font-weight: 600;
   line-height: 150%;
-  border: none;
+  min-width: 1rem;
+  width: 100%;
+  background-color: var(--lightGrayishBlue);
   outline: none;
   border-radius: 2rem;
   padding: .5rem 1.5rem;
-  border: .1rem solid var(--lightGrayishBlue);
-  width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inputStyles::placeholder {
@@ -78,6 +78,10 @@ input:-webkit-autofill:focus {
   outline: none;
   border-radius: 1rem;
   padding: .8rem 1.5rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .textAreaMessage::placeholder {

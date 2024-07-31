@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem 4rem 2.5rem 8rem;
 }
 
 .divContactForm {
@@ -30,6 +29,6 @@
     }
 
     .divContactForm > img {
-        width: 70%;
+        max-width: 70%;
     }
 }
