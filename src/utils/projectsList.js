@@ -54,7 +54,7 @@ export const projectList = [
   {
     id: 'Kurve',
     title: 'Kurve Inc.',
-    description: 'Sitio web informativo de la empresa Kurve para informar sobre su IA y sus beneficios. With a contact form connected to EmailJS.',
+    description: 'Informational website of Kurve Inc. to inform about its AI and its benefits. With a contact form connected to EmailJS.',
     url: 'https://kurve.ai/',
     github: '',
     images: [
