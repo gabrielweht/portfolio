@@ -112,7 +112,7 @@
 .profileButtons:active {
     transition: .1s;
     box-shadow: 0 0 20px 2px var(--deepSeaBlue);
-    padding: 1.1rem 1.6rem;
+    padding: .6rem 1.6rem;
     margin: 0
 }
 
@@ -158,6 +158,14 @@
     .iconProfile {
         font-size: 2rem;
     }
+
+    .profileButtons:active {
+        transition: .1s;
+        box-shadow: 0 0 20px 2px var(--deepSeaBlue);
+        padding: 1.1rem 1.6rem;
+        margin: 0
+    }
+    
 }
 
 @media (width < 400px) {

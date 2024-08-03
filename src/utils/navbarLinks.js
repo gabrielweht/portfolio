@@ -5,7 +5,7 @@ import { MdOutlineCloudDownload } from "react-icons/md";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { RiContactsBook3Line } from "react-icons/ri";
 import { FaLaptopCode } from "react-icons/fa";
-import curriculum from '../assets/Gabriel Weht - CV - Software Developer.pdf'
+import curriculum from '../assets/Gabriel Weht - CV - Full Stack Developer.pdf'
 
 export const navbarLinks = [
     {
