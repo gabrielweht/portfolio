@@ -3,6 +3,7 @@ import './contactForm.css';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { FiSend } from "react-icons/fi";
+import DOMPurify from "dompurify";
 
 export function ContactForm() {
   const [click, setClick] = useState(false);
@@ -34,7 +35,7 @@ export function ContactForm() {
   function handleInputChange(e: any) {
     const newInput = {
       ...inputs,
-      [e.target.name]: e.target.value,
+      [e.target.name]: DOMPurify.sanitize(e.target.value),
     };
     setInputs(newInput);
     setErrors({
@@ -174,7 +175,7 @@ export function ContactForm() {
             name="message"
             className="textAreaMessage"
             value={message}
-            onChange={event => setMessage(event.target.value)}
+            onChange={event => setMessage(DOMPurify.sanitize(event.target.value))}
             onFocus={event => scrollToElement(event.target)}
             placeholder="Write here your message..."
           ></textarea>
