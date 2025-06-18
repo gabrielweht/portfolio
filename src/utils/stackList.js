@@ -1,9 +1,9 @@
 import iconReact from "../assets/react.webp";
 import Javascript from "../assets/js.webp";
 import SiTypescript from "../assets/ts.webp";
-// import SiCsharp from "../assets/csharp.webp";
+import SiCsharp from "../assets/csharp.webp";
 import SiRedux from "../assets/redux.webp";
-// import SiDotnet from "../assets/dotnet.webp";
+import SiDotnet from "../assets/dotnet.webp";
 import SiHtml5 from "../assets/html.webp";
 import SiCss3 from "../assets/css.webp";
 import SiNodedotjs from "../assets/node.webp";
@@ -78,16 +78,16 @@ export const stacksList = [
                 "level": "Intermidiate",
                 "logo": SiNodedotjs
             },
-            // {
-            //     "stack": ".Net",
-            //     "level": "Intermidiate",
-            //     "logo": SiDotnet
-            // },
-            // {
-            //     "stack": "C#",
-            //     "level": "Initial",
-            //     "logo": SiCsharp
-            // }
+            {
+                "stack": ".Net",
+                "level": "Intermidiate",
+                "logo": SiDotnet
+            },
+            {
+                "stack": "C#",
+                "level": "Initial",
+                "logo": SiCsharp
+            }
         ]
     }
 ]
